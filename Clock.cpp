@@ -12,7 +12,7 @@ Clock::Clock(int hours, int minutes, int seconds) {
     this->seconds = seconds;
 }
 
-void Clock::addHour() {     //TODO addHour
+void Clock::addHour() {     //AddHour
     if (hours == 23) {
         hours = 0;
     }
@@ -21,7 +21,7 @@ void Clock::addHour() {     //TODO addHour
     }
 }
 
-void Clock::addMinute() {   //TODO addMinute
+void Clock::addMinute() {   //AddMinute
     if (minutes == 59) {
         minutes = 0;
         addHour();
@@ -31,7 +31,7 @@ void Clock::addMinute() {   //TODO addMinute
     }
 }
 
-void Clock::addSecond() {    //TODO addSecond
+void Clock::addSecond() {    //AddSecond
     if (seconds == 59) {
         seconds = 0;
         addMinute();
@@ -41,13 +41,13 @@ void Clock::addSecond() {    //TODO addSecond
     }
 }
 
-string Clock::get24HourFormat() {    //TODO get24HourFormat
+string Clock::get24HourFormat() {    //Get24HourFormat
     string time;
     
     time = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
     return time;
 }
-string Clock::get12HourFormat() {     //TODO get12HourFormat
+string Clock::get12HourFormat() {     //Get12HourFormat
 
     string time;
     string suffix = "AM";
@@ -66,7 +66,7 @@ string Clock::get12HourFormat() {     //TODO get12HourFormat
      time = to_string(currentTime) + ":" + pad(minutes) + ":" + pad(seconds) +" "+ suffix;
     return time;
 }
-string Clock::pad(int num)     //TODO pad
+string Clock::pad(int num)     //Pad
 {
     string padnum;
 
