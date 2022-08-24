@@ -18,25 +18,18 @@ i. "Wait One Second"
 a. User Input = Exit?
 i. "End Program"
 b. If "No", go to "Add Hour"
-
 i. If "Yes"
-
 1. "Add One Hour"
 2. "Clear Screen"
-3. 
-c. If "No", go to "Add Minute"
-
+3. c. If "No", go to "Add Minute"
 i. If "Yes"
 1. "Add Minute"
 2. "Clear Screen"
-3. 
-d. If "No", go to "Add Second"
-
+3. d. If "No", go to "Add Second"
 i. If "Yes"
 1. "Add Second"
 2. "Clear Screen"
-3. 
-e. If "No"
+3. e. If "No"
 i. Clear Screen
 # Flowchart
 ![image](https://user-images.githubusercontent.com/110702739/186433825-af3bd4f6-693b-49d9-9710-fefb49d9d01e.png)
