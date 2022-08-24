@@ -7,16 +7,16 @@ class Clock
 	public:
 		Clock();
 		Clock(int, int, int);
-		void addHour();				//Same as addOneHour
-		void addSecond();			//Same as addOneSecond
-		void addMinute();			//Same as addOneMinute
-		string get12HourFormat();	//Same as formatTime12
-		string get24HourFormat();	//Same as formatTime24
+		void addHour();				//AddOneHour
+		void addSecond();			//AddOneSecond
+		void addMinute();			//AddOneMinute
+		string get12HourFormat();	//FormatTime12
+		string get24HourFormat();	//FormatTime24
 
 	private:
 		int hours;
 		int minutes;
 		int seconds;
-		string pad(int);	//Same as twoDigitString
+		string pad(int);	//TwoDigitString
 };
 
