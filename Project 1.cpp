@@ -10,7 +10,7 @@ july 16,2022
 #include "ValidationUtils.h"
 
 using namespace std;
-//TODO implement printMenu
+//Implement printMenu
 void printMenu() {
     cout << "*******************************" << endl;
     cout << "*   1- Add One Hour          * " << endl;
@@ -20,7 +20,7 @@ void printMenu() {
     cout << "*******************************"<< endl;
     cout << "Enter Selection" << endl;
 }
-//TODO implement printClock
+//Implement printClock
 void printClock(Clock clock) {
 
     cout << "*******************************" << endl;
@@ -33,8 +33,8 @@ int main() {
     const int ADD_ONE_HOUR_MENUE_CHOICE =  1;
     const int ADD_ONE_HOUR_MENUE_CHOICE2 = 2;
     const int ADD_ONE_HOUR_MENUE_CHOICE3 = 3;
-    Clock clock;                              //TODO create instance of Clock, with default constructor
-    ValidationUtils validationUtils(1,4);     //TODO create instance of ValidationUtils with parameterized constructor
+    Clock clock;                              //Create instance of Clock, with default constructor
+    ValidationUtils validationUtils(1,4);     //Create instance of ValidationUtils with parameterized constructor
 
     
     //Get user input
@@ -44,7 +44,7 @@ int main() {
        printClock(clock);     //print clock
        printMenu();           //print menu
       
-       //while user input is not valid...use validationUtils
+       //While user input is not valid...use validationUtils
        cin >> userSelection;
        while (validationUtils.validateMenuChoice(userSelection) == false) {
            //print error message
@@ -53,7 +53,7 @@ int main() {
            validationUtils.getMaxValue();
            validationUtils.getMinValue();
            cout << "Enter you selsction" << endl;
-           cin >> userSelection;       //get input
+           cin >> userSelection;       //Get input
        
        }
        //Decision structure to handle user selections
