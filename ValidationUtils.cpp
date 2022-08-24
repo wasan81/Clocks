@@ -4,7 +4,7 @@ ValidationUtils::ValidationUtils(int min, int max) {
     this->min = min;
     this->max = max;
 }
-//TODO validateMenuChoice
+//ValidateMenuChoice
 bool ValidationUtils::validateMenuChoice(int choice)
 {
     bool isvalid;
@@ -16,13 +16,13 @@ bool ValidationUtils::validateMenuChoice(int choice)
     }return isvalid;
 }
 
-//TODO getMinValue
+//GetMinValue
 int ValidationUtils::getMaxValue() 
 {
     return max;
 }
 
-//TODO Implement getMinValue
+//Implement getMinValue
 int ValidationUtils::getMinValue()
 {
    return min;
